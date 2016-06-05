@@ -1,6 +1,5 @@
 # grunt-init-webepsb
-Create a web app with Express and grunt automation for Pug templating engine,
-Stylus css preprocessor and Browserify
+Create a web app with Express and grunt automation for Pug (JADE) templating engine, Stylus css preprocessor and Browserify
 
 ## Installation
 If you haven't already done so, install [grunt-init][]
@@ -17,9 +16,11 @@ At the command-line, cd into an empty directory, run this command and follow the
 ```
 grunt-init webepsb
 ```
-Default task is to clean `bin` and compiling all public `src` files, following
-that starts `grunt-watch` which watches for changes and recompiles only the
-changed files that triggers the task.
+Default task is to clean `bin` and compiling all public `src` files
+
+following that starts `grunt-watch` which watches for changes and recompiles only
+the changed files that triggers the task.
+
 _Note that grunt-contrib-watch has an issue of not triggering task on file
 creation. grunt watch will have to be rerun on new file creation._
 ```
@@ -66,8 +67,7 @@ compile demo files
 ```
 grunt
 ```
-when grunt begins to watch enter ```ctrl+c```
-run the server
+when grunt begins to watch enter ```ctrl+c``` and run the server
 ```
 node index.js
 ```
