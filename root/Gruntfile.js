@@ -9,16 +9,9 @@
  *    purges all files in bin/css and bin/html
  *  grunt watch
  *    WARNING, add new files wont work, restart watch on new files
- *  grunt watch:pugviews
- *    compiles changed pug files in src/pug/viw to bin/html
- *  grunt watch:styviews
- *    compiles changed styl files in src/sty/viw to bin/css
- *  grunt pug
- *  grunt pug:all
- *    compiles all files in src/pug/viw to bin/html
- *  grunt stylus
- *  grunt stylus:all
- *    compiles all files in src/sty/viw to bin/css
+ *    compiles changed public files in src to bin
+ *  grunt X:all
+ *    where X in (pug, stylus, browserify) to recompile specifically
  */
 module.exports = function(grunt) {
   grunt.initConfig({
