@@ -42,26 +42,23 @@ exports.template = function(grunt, init, done) {
     init.prompt('author_email'),
     init.prompt('author_url'),
     init.prompt('node_version', '>= 0.8.0'),
-    init.prompt('main'),
-    init.prompt('npm_test', 'grunt nodeunit'),
-    {
-      name: 'travis',
-      message: 'Will this project be tested with Travis CI?',
-      default: 'Y/n',
-      warning: 'If selected, you must enable Travis support for this project in https://travis-ci.org/profile'
-    },
+    init.prompt('main', 'index.js'),
   ], function(err, props) {
     props.keywords = [];
     props.devDependencies = {
-      'grunt-contrib-jshint': '~0.6.4',
-      'grunt-contrib-nodeunit': '~0.2.0',
-      'grunt-contrib-watch': '~0.5.3',
+      'express' : '~4.13.4',
+      'grunt' : '~1.0.1',
+      'grunt-browserify' : '~5.0.0',
+      'grunt-contrib-clean' : '~1.0.0',
+      'grunt-contrib-pug' : '~1.0.0',
+      'grunt-contrib-stylus' : '~1.2.0',
+      'grunt-contrib-watch' : '~1.0.0',
+      'pug' : '~2.0.0-alpha8',
+      'stylus' : '~0.54.5'
     };
-    props.travis = /y/i.test(props.travis);
 
     // Files to copy (and process).
     var files = init.filesToCopy(props);
-    if (!props.travis) { delete files['.travis.yml']; }
 
     // Add properly-named license files.
     init.addLicenseFiles(files, props.licenses);
