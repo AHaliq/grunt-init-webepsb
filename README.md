@@ -8,7 +8,7 @@ If you haven't already done so, install [grunt-init][]
 Once grunt is installed place this template in your `~/.grunt-init` directory.
 It's recommended that you git clone the repository into the directory.
 ```
-git clone https://github.com/AHaliq/grunt-init-webepsb.git
+git clone https://github.com/AHaliq/grunt-init-webepsb.git ~/.grunt-init/webepsb
 ```
 
 ## Usage
