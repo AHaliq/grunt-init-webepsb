@@ -15,7 +15,7 @@ git clone https://github.com/AHaliq/grunt-init-webepsb.git ~/.grunt-init/webepsb
 ## Usage
 At the command-line, cd into an empty directory, run this command and follow the prompts.
 ```
-grunt-init-webepsb
+grunt-init webepsb
 ```
 Default task is to clean `bin` and compiling all public `src` files, following
 that starts `grunt-watch` which watches for changes and recompiles only the
@@ -47,6 +47,31 @@ root
 ```
 Sub directories can be created in any of the leaf directories of the default
 structure. 
+
+## Demo
+After having installed webepsb and grunt locally, you may run the demo files
+to check success by following the steps described below:
+
+create a webepsb project
+```
+mkdir myapp
+cd myapp
+grunt-init webepsb
+```
+install dependencies
+```
+npm install
+```
+compile demo files
+```
+grunt
+```
+when grunt begins to watch enter ```ctrl+c```
+run the server
+```
+node index.js
+```
+open your browser to ```localhost/3000```
 
 _Note that this template will generate files in the current directory, so be
 sure to change to a new directory first if you don't want to overwrite
