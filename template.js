@@ -45,6 +45,7 @@ exports.template = function(grunt, init, done) {
     init.prompt('main', 'index.js'),
   ], function(err, props) {
     props.keywords = [];
+    props.scripts = {'start': 'node ' + props.main};
     props.devDependencies = {
       'express' : '~4.13.4',
       'grunt' : '~1.0.1',
