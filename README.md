@@ -71,7 +71,7 @@ when grunt begins to watch enter ```ctrl+c``` and run the server
 ```
 node index.js
 ```
-open your browser to ```localhost/3000```
+open your browser to ```localhost/5000```
 
 _Note that this template will generate files in the current directory, so be
 sure to change to a new directory first if you don't want to overwrite
